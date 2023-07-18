@@ -1,0 +1,88 @@
+.loader {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	position: fixed;
+	animation: rotate 1s linear infinite;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.loader::before , .loader::after {
+	content: "";
+	box-sizing: border-box;
+	position: absolute;
+	inset: 0px;
+	border-radius: 50%;
+	border: 5px solid #000000;
+	animation: prixClipFix 2s linear infinite ;
+}
+.loader::after{
+	border-color: #FF3D00;
+	animation: prixClipFix 2s linear infinite , rotate 0.5s linear infinite reverse;
+	inset: 6px;
+}
+
+@keyframes rotate {
+	0%   {transform: rotate(0deg)}
+	100%   {transform: rotate(360deg)}
+}
+
+@keyframes prixClipFix {
+		0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+		25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+		50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+		75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+		100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
+
+.wrapper{
+	width: 740px;
+background-color: rgb(133, 207, 149);
+}
+
+.todo{
+	width: 700px;
+	padding: 10px;
+	background: linear-gradient(119deg,  #e2e4ff 0%, #f8dfdf 100%);
+	margin: 2px 2px 2px 20px;
+	font-size: large;
+	display: inline-flex;
+	justify-content: flex-end;
+	align-items: baseline;
+}
+
+.inputForEdit{
+	border: none;
+	width: 500px;
+	padding: 3px;
+	background: linear-gradient(119deg,  #e2e4ff 0%, #f8dfdf 100%);
+	border-bottom: 2px solid blueviolet;
+	outline:none;
+}
+
+.numder{
+	width: 30px;
+	height: 25px;
+	margin: 10px;
+	border-radius: 5px;
+	text-align: center;
+	background-color: rgb(133, 207, 149);
+}
+.title{
+	margin: 10px;
+	width: 500px;
+}
+
+.btn{
+	height: 30px;
+	margin: 2px;
+	background-color: rgb(252, 252, 252);
+	border-radius: 5px;
+	border: none;
+	transition: all .5s;
+}
+
+.btn:hover{
+	background-color: rgb(189, 200, 250);
+}

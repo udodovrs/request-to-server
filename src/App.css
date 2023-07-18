@@ -1,0 +1,38 @@
+.JsonPlaceholder {
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	background-color: rgb(168, 168, 167);
+	font-size: large;
+	margin: 2px;
+	padding: 5px;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.JsonServer {
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	background-color: rgb(32, 155, 149);
+	font-size: large;
+	margin: 5px;
+	padding: 5px;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.Firebase {
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	background-color: rgb(133, 207, 149);
+	font-size: large;
+	margin: 5px;
+	padding: 5px;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 10px;
+}
